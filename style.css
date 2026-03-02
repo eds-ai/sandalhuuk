@@ -308,12 +308,19 @@ h2 {
 .product-info p { color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 16px; }
 .product-colors { display: flex; gap: 8px; margin-bottom: 16px; }
 .color-dot {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 2px solid rgba(0,0,0,0.1);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: transform 0.15s, border-color 0.15s;
 }
+.color-dot:hover { transform: scale(1.15); }
+.color-dot.active { border: 3px solid var(--dark); transform: scale(1.15); }
 .product-price {
   font-size: 1.8rem;
   font-weight: 900;

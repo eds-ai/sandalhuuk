@@ -101,16 +101,16 @@
         <!-- SINGLE -->
         <div class="product-card">
           <div class="product-img-placeholder">
-            <img src="images/product-blue-yellow.jpg" alt="Sandal Huuk Single" />
+            <img id="single-img" src="images/product-blue-yellow.jpg" alt="Sandal Huuk Single" />
           </div>
           <div class="product-info">
             <h3>Sandal Huuk — Single</h3>
             <p>One Sandal Huuk in your choice of color. Clips to waistband, bag, or chair.</p>
             <div class="product-colors">
-              <span class="color-dot" style="background:#F5C518" title="Blue/Yellow"></span>
-              <span class="color-dot" style="background:#FF6B9D" title="Blue/Pink"></span>
-              <span class="color-dot" style="background:#00C9A7" title="Orange/Teal"></span>
-              <span class="color-dot" style="background:#A855F7" title="Red/Purple"></span>
+              <span class="color-dot active" style="background:#F5C518" title="Blue/Yellow" onclick="swapColor('single-img','images/product-blue-yellow.jpg', this)"></span>
+              <span class="color-dot" style="background:#FF6B9D" title="Blue/Pink" onclick="swapColor('single-img','images/product-blue-pink.jpg', this)"></span>
+              <span class="color-dot" style="background:#00C9A7" title="Orange/Teal" onclick="swapColor('single-img','images/product-orange-teal.jpg', this)"></span>
+              <span class="color-dot" style="background:#C0392B" title="Teal/Pink" onclick="swapColor('single-img','images/product-teal-pink.jpg', this)"></span>
             </div>
             <div class="product-price">$7.99</div>
             <p class="shipping-note">+ $4.99 shipping</p>
@@ -122,16 +122,17 @@
         <div class="product-card featured">
           <div class="badge">Best Value</div>
           <div class="product-img-placeholder">
-            <img src="images/all-colors.jpg" alt="Sandal Huuk 4-Pack" />
+            <img id="pack-img" src="images/all-colors.jpg" alt="Sandal Huuk 4-Pack" />
           </div>
           <div class="product-info">
             <h3>Sandal Huuk — 4-Pack</h3>
             <p>Four Sandal Huuks — one for everyone. Assorted colors or pick your favorites.</p>
             <div class="product-colors">
-              <span class="color-dot" style="background:#F5C518"></span>
-              <span class="color-dot" style="background:#FF6B9D"></span>
-              <span class="color-dot" style="background:#00C9A7"></span>
-              <span class="color-dot" style="background:#A855F7"></span>
+              <span class="color-dot active" style="background:#888" title="Assorted" onclick="swapColor('pack-img','images/all-colors.jpg', this)">🎨</span>
+              <span class="color-dot" style="background:#F5C518" title="Blue/Yellow" onclick="swapColor('pack-img','images/product-blue-yellow.jpg', this)"></span>
+              <span class="color-dot" style="background:#FF6B9D" title="Blue/Pink" onclick="swapColor('pack-img','images/product-blue-pink.jpg', this)"></span>
+              <span class="color-dot" style="background:#00C9A7" title="Orange/Teal" onclick="swapColor('pack-img','images/product-orange-teal.jpg', this)"></span>
+              <span class="color-dot" style="background:#C0392B" title="Teal/Pink" onclick="swapColor('pack-img','images/product-teal-pink.jpg', this)"></span>
             </div>
             <div class="product-price">$24.99 <span class="compare-price">$31.96</span></div>
             <p class="shipping-note free">✅ Free shipping</p>
@@ -171,5 +172,12 @@
     </div>
   </footer>
 
+<script>
+function swapColor(imgId, src, dot) {
+  document.getElementById(imgId).src = src;
+  dot.closest('.product-colors').querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
+  dot.classList.add('active');
+}
+</script>
 </body>
 </html>
