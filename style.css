@@ -393,24 +393,27 @@ footer a:hover { text-decoration: underline; }
   /* Announcement */
   .announcement-bar { font-size: 0.8rem; padding: 8px 12px; }
 
-  /* Hero — stack vertically */
+  /* Hero — stack vertically on mobile */
   .hero {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 32px 20px 40px;
     text-align: center;
     min-height: auto;
+    gap: 24px;
   }
-  .hero-content { max-width: 100%; }
-  .hero h1 { font-size: 2.4rem; }
-  .hero-sub { font-size: 1rem; }
-  .hero-buttons { justify-content: center; }
+  .hero-content { max-width: 100%; order: 1; }
+  .hero-eyebrow { font-size: 0.75rem; }
+  .hero h1 { font-size: 2rem; margin-bottom: 12px; }
+  .hero-sub { font-size: 0.95rem; margin-bottom: 24px; }
+  .hero-buttons { justify-content: center; flex-direction: column; align-items: center; gap: 12px; }
   .hero-image {
     flex: none;
     width: 100%;
-    height: 260px;
+    height: 220px;
     border-radius: 16px;
+    order: 2;
   }
-  .btn-primary, .btn-secondary { padding: 13px 24px; font-size: 0.95rem; }
+  .btn-primary, .btn-secondary { padding: 14px 32px; font-size: 0.95rem; width: 100%; max-width: 280px; text-align: center; }
 
   /* Features bar */
   .features-inner {
