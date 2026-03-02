@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sandal Huuk — Hold Hands. Not Flip Flops.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
 
   <!-- ANNOUNCEMENT BAR -->
   <div class="announcement-bar">
-    🌊 Free shipping on all 4-packs — Shop the bundle and save!
+    🌊 &nbsp; Free shipping on all 4-packs &nbsp;·&nbsp; The original hands-free sandal holder &nbsp; 🌊
   </div>
 
   <!-- NAVIGATION -->
@@ -24,19 +24,24 @@
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      <a href="#shop" class="nav-cta">Shop Now</a>
+      <a href="#shop" class="nav-cta">Shop Now →</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <p class="hero-eyebrow">The Original Hands-Free Sandal Holder</p>
-      <h1>Hold Hands.<br/>Not Flip Flops.</h1>
-      <p class="hero-sub">Clip it. Walk free. Enjoy your day.</p>
+      <div class="hero-tag">🩴 Hands-Free Sandal Holder</div>
+      <h1>Hold Hands.<br/><span>Not Flip Flops.</span></h1>
+      <p class="hero-sub">Clip your sandals to your waistband, beach bag, or chair — and actually enjoy your day.</p>
       <div class="hero-buttons">
         <a href="#shop" class="btn-primary">Shop Now</a>
-        <a href="#how-it-works" class="btn-secondary">See How It Works</a>
+        <a href="#how-it-works" class="btn-ghost">See How It Works ↓</a>
+      </div>
+      <div class="hero-social-proof">
+        <span>✅ Fits any flip flop</span>
+        <span>✅ Free shipping on 4-packs</span>
+        <span>✅ Multiple colors</span>
       </div>
     </div>
     <div class="hero-image">
@@ -44,48 +49,36 @@
     </div>
   </section>
 
-  <!-- FEATURES BAR -->
-  <section class="features-bar">
-    <div class="features-inner">
-      <div class="feature">
-        <span class="feature-icon">📎</span>
-        <span>Clips to waistband, bag & chairs</span>
-      </div>
-      <div class="feature">
-        <span class="feature-icon">🩴</span>
-        <span>Fits any flip flop or thong sandal</span>
-      </div>
-      <div class="feature">
-        <span class="feature-icon">🎨</span>
-        <span>Fun colors — 4-pack value</span>
-      </div>
-      <div class="feature">
-        <span class="feature-icon">🚚</span>
-        <span>Free shipping on 4-packs</span>
-      </div>
-    </div>
-  </section>
+  <!-- WAVE DIVIDER -->
+  <div class="wave-top">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+  </div>
 
   <!-- HOW IT WORKS -->
   <section class="how-it-works" id="how-it-works">
     <div class="container">
-      <h2>How It Works</h2>
-      <p class="section-sub">Three steps to total freedom.</p>
+      <div class="section-label">Simple as that</div>
+      <h2>Three Steps to Total Freedom</h2>
       <div class="steps">
         <div class="step">
+          <div class="step-icon">🩴</div>
           <div class="step-number">01</div>
           <h3>Slide Your Sandal In</h3>
-          <p>Slip the thong strap of your flip flop into the two curved hooks on Sandal Huuk.</p>
+          <p>Slip the thong strap of your flip flop into the two curved hooks.</p>
         </div>
+        <div class="step-arrow">→</div>
         <div class="step">
+          <div class="step-icon">📎</div>
           <div class="step-number">02</div>
           <h3>Clip It On</h3>
           <p>Attach Sandal Huuk to your waistband, beach bag, chair, or stroller.</p>
         </div>
+        <div class="step-arrow">→</div>
         <div class="step">
+          <div class="step-icon">🌊</div>
           <div class="step-number">03</div>
           <h3>Walk Hands-Free</h3>
-          <p>Head to the water, the boardwalk, or wherever — your sandals come with you.</p>
+          <p>Hit the water, boardwalk, or pool — your sandals come with you.</p>
         </div>
       </div>
     </div>
@@ -94,48 +87,62 @@
   <!-- SHOP SECTION -->
   <section class="shop" id="shop">
     <div class="container">
+      <div class="section-label">Pick your color</div>
       <h2>Shop Sandal Huuk</h2>
-      <p class="section-sub">Available in bold colors — grab a 4-pack for the whole crew.</p>
       <div class="products">
 
         <!-- SINGLE -->
         <div class="product-card">
-          <div class="product-img-placeholder">
+          <div class="product-img-wrap">
             <img id="single-img" src="images/product-blue-yellow.jpg" alt="Sandal Huuk Single" />
           </div>
           <div class="product-info">
-            <h3>Sandal Huuk — Single</h3>
-            <p>One Sandal Huuk in your choice of color. Clips to waistband, bag, or chair.</p>
-            <div class="product-colors">
-              <span class="color-dot active" style="background:linear-gradient(135deg,#1E90FF 50%,#F5C518 50%)" title="Blue/Yellow" onclick="swapColor('single-img','images/product-blue-yellow.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#1E90FF 50%,#FF6B9D 50%)" title="Blue/Pink" onclick="swapColor('single-img','images/product-blue-pink.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#FF8C00 50%,#00C9A7 50%)" title="Orange/Teal" onclick="swapColor('single-img','images/product-orange-teal.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#00C9A7 50%,#FF6B9D 50%)" title="Teal/Pink" onclick="swapColor('single-img','images/product-teal-pink.jpg', this)"></span>
+            <div class="product-header">
+              <div>
+                <h3>Single</h3>
+                <p class="product-subtitle">Your choice of color</p>
+              </div>
+              <div class="product-price">$7.99</div>
             </div>
-            <div class="product-price">$7.99</div>
+            <div class="color-selector">
+              <span class="color-label">Color: <strong id="single-color-label">Blue / Yellow</strong></span>
+              <div class="product-colors">
+                <span class="color-dot active" style="background:linear-gradient(135deg,#1E90FF 50%,#F5C518 50%)" title="Blue/Yellow" onclick="swapColor('single-img','images/product-blue-yellow.jpg',this,'Blue / Yellow','single-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#1E90FF 50%,#FF6B9D 50%)" title="Blue/Pink" onclick="swapColor('single-img','images/product-blue-pink.jpg',this,'Blue / Pink','single-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#FF8C00 50%,#00C9A7 50%)" title="Orange/Teal" onclick="swapColor('single-img','images/product-orange-teal.jpg',this,'Orange / Teal','single-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#00C9A7 50%,#FF6B9D 50%)" title="Teal/Pink" onclick="swapColor('single-img','images/product-teal-pink.jpg',this,'Teal / Pink','single-color-label')"></span>
+              </div>
+            </div>
             <p class="shipping-note">+ $4.99 shipping</p>
-            <a href="https://sandalhuuk.com" class="btn-primary">Add to Cart</a>
+            <a href="https://sandalhuuk.myshopify.com" class="btn-primary full">Add to Cart</a>
           </div>
         </div>
 
         <!-- 4-PACK -->
         <div class="product-card featured">
-          <div class="badge">Best Value</div>
-          <div class="product-img-placeholder">
+          <div class="badge">⭐ Best Value</div>
+          <div class="product-img-wrap">
             <img id="pack-img" src="images/all-colors.jpg" alt="Sandal Huuk 4-Pack" />
           </div>
           <div class="product-info">
-            <h3>Sandal Huuk — 4-Pack</h3>
-            <p>Four Sandal Huuks — one for everyone. Assorted colors or pick your favorites.</p>
-            <div class="product-colors">
-              <span class="color-dot active" style="background:linear-gradient(135deg,#1E90FF 50%,#F5C518 50%)" title="Blue/Yellow" onclick="swapColor('pack-img','images/product-blue-yellow.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#1E90FF 50%,#FF6B9D 50%)" title="Blue/Pink" onclick="swapColor('pack-img','images/product-blue-pink.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#FF8C00 50%,#00C9A7 50%)" title="Orange/Teal" onclick="swapColor('pack-img','images/product-orange-teal.jpg', this)"></span>
-              <span class="color-dot" style="background:linear-gradient(135deg,#00C9A7 50%,#FF6B9D 50%)" title="Teal/Pink" onclick="swapColor('pack-img','images/product-teal-pink.jpg', this)"></span>
+            <div class="product-header">
+              <div>
+                <h3>4-Pack</h3>
+                <p class="product-subtitle">One for everyone</p>
+              </div>
+              <div class="product-price">$24.99 <span class="compare">$31.96</span></div>
             </div>
-            <div class="product-price">$24.99 <span class="compare-price">$31.96</span></div>
-            <p class="shipping-note free">✅ Free shipping</p>
-            <a href="https://sandalhuuk.com" class="btn-primary">Add to Cart</a>
+            <div class="color-selector">
+              <span class="color-label">Color: <strong id="pack-color-label">Blue / Yellow</strong></span>
+              <div class="product-colors">
+                <span class="color-dot active" style="background:linear-gradient(135deg,#1E90FF 50%,#F5C518 50%)" title="Blue/Yellow" onclick="swapColor('pack-img','images/product-blue-yellow.jpg',this,'Blue / Yellow','pack-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#1E90FF 50%,#FF6B9D 50%)" title="Blue/Pink" onclick="swapColor('pack-img','images/product-blue-pink.jpg',this,'Blue / Pink','pack-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#FF8C00 50%,#00C9A7 50%)" title="Orange/Teal" onclick="swapColor('pack-img','images/product-orange-teal.jpg',this,'Orange / Teal','pack-color-label')"></span>
+                <span class="color-dot" style="background:linear-gradient(135deg,#00C9A7 50%,#FF6B9D 50%)" title="Teal/Pink" onclick="swapColor('pack-img','images/product-teal-pink.jpg',this,'Teal / Pink','pack-color-label')"></span>
+              </div>
+            </div>
+            <p class="shipping-note free">🚚 Free shipping included</p>
+            <a href="https://sandalhuuk.myshopify.com" class="btn-primary full">Add to Cart</a>
           </div>
         </div>
 
@@ -143,17 +150,19 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT / LIFESTYLE -->
   <section class="about" id="about">
     <div class="container about-inner">
-      <div class="about-text">
-        <h2>Made for Real Beach Days</h2>
-        <p>Sandal Huuk was born out of a simple frustration — why do we always end up carrying our flip flops in our hands the moment we hit the sand?</p>
-        <p>We designed a simple, lightweight clip that holds your sandals securely while you walk, swim, chase your kids, or grab an ice cream. Because your hands should be free to do what matters.</p>
-        <p><strong>"Hold Hands. Not Flip Flops."</strong></p>
-      </div>
-      <div class="about-img-placeholder">
+      <div class="about-img">
         <img src="images/about-lifestyle.jpg" alt="Sandal Huuk lifestyle" />
+      </div>
+      <div class="about-text">
+        <div class="section-label light">Our story</div>
+        <h2>Made for Real Beach Days</h2>
+        <p>Sandal Huuk was born from a simple frustration — why do we always end up carrying our flip flops in our hands the moment we hit the sand?</p>
+        <p>We designed a lightweight clip that holds your sandals securely so your hands stay free for the things that actually matter — holding hands, carrying kids, grabbing an ice cream.</p>
+        <p class="tagline">"Hold Hands. Not Flip Flops."</p>
+        <a href="#shop" class="btn-primary">Shop Now</a>
       </div>
     </div>
   </section>
@@ -162,18 +171,20 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">SANDAL<span>HUUK</span></div>
-      <p>Hold Hands. Not Flip Flops. © 2024 Huuk Inc. All rights reserved.</p>
-      <p>
-        <a href="mailto:ericsanchez.sandalhuuk@outlook.com">Contact Us</a> ·
-        <a href="#">Privacy Policy</a> ·
+      <p class="footer-tagline">Hold Hands. Not Flip Flops.</p>
+      <div class="footer-links">
+        <a href="mailto:ericsanchez.sandalhuuk@outlook.com">Contact</a>
+        <a href="#">Privacy Policy</a>
         <a href="#">Shipping & Returns</a>
-      </p>
+      </div>
+      <p class="footer-copy">© 2024 Huuk Inc. All rights reserved.</p>
     </div>
   </footer>
 
 <script>
-function swapColor(imgId, src, dot) {
+function swapColor(imgId, src, dot, label, labelId) {
   document.getElementById(imgId).src = src;
+  document.getElementById(labelId).textContent = label;
   dot.closest('.product-colors').querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
   dot.classList.add('active');
 }
