@@ -1,11 +1,11 @@
 /* BRAND HEADER */
 .brand-header {
-  background: var(--dark);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 32px;
-  border-bottom: 2px solid var(--teal);
+  padding: 12px 32px;
+  border-bottom: 3px solid var(--teal);
 }
 .brand-header img {
   height: 55px;
