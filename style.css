@@ -10,7 +10,6 @@
 .brand-header img {
   height: 55px;
   width: auto;
-  filter: brightness(0) invert(1);
   display: block;
 }
 
